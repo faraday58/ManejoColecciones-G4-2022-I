@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManejoColecciones-G4-2022-I", "ManejoColecciones-G4-2022-I.csproj", "{373B7CA3-24FD-404E-9AC6-98E32F8A81DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsColecciones", "FormsColecciones\FormsColecciones.csproj", "{CF6DC46E-27DA-4362-9D81-693A8D1D3964}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{373B7CA3-24FD-404E-9AC6-98E32F8A81DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{373B7CA3-24FD-404E-9AC6-98E32F8A81DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{373B7CA3-24FD-404E-9AC6-98E32F8A81DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF6DC46E-27DA-4362-9D81-693A8D1D3964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF6DC46E-27DA-4362-9D81-693A8D1D3964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF6DC46E-27DA-4362-9D81-693A8D1D3964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF6DC46E-27DA-4362-9D81-693A8D1D3964}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
