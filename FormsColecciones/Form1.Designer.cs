@@ -123,6 +123,7 @@ namespace FormsColecciones
             this.btnSiguiente.TabIndex = 1;
             this.btnSiguiente.Text = "Siguiente";
             this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // Form1
             // 

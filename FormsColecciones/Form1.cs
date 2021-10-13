@@ -22,5 +22,14 @@ namespace FormsColecciones
             txtbEdad.Clear();
             txtbDireccion.Clear();
         }
+        int i = 0;
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            Cliente cliente = (Cliente)clientes[i++];
+            txtbNombre.Text = cliente.Nombre;
+            txtbTelfono.Text = cliente.Telefono;
+            txtbEdad.Text = cliente.Edad;
+            txtbDireccion.Text = cliente.Direccion ;
+        }
     }
 }
