@@ -6,7 +6,25 @@ namespace FormsColecciones
 {
     public partial class Form1 : Form
     {
-        ArrayList clientes;
+        private ArrayList clientes;
+        private int indice;
+
+        public int Indice
+        {
+            get => indice;
+            set
+            {
+                if (value < 0 || value >= clientes.Count)
+                {
+                    indice = 0;
+                }
+                else
+                {
+                    indice = value;
+                }
+
+            }
+        }
 
         public Form1()
         {
@@ -22,14 +40,26 @@ namespace FormsColecciones
             txtbEdad.Clear();
             txtbDireccion.Clear();
         }
-        int i = 0;
+        
+
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            Cliente cliente = (Cliente)clientes[i++];
+
+            Cliente cliente = (Cliente)clientes[Indice++];
             txtbNombre.Text = cliente.Nombre;
             txtbTelfono.Text = cliente.Telefono;
             txtbEdad.Text = cliente.Edad;
             txtbDireccion.Text = cliente.Direccion ;
+        }
+
+        private void btnAnterior_Click(object sender, EventArgs e)
+        {
+            Cliente cliente = (Cliente)clientes[Indice--];
+            txtbNombre.Text = cliente.Nombre;
+            txtbTelfono.Text = cliente.Telefono;
+            txtbEdad.Text = cliente.Edad;
+            txtbDireccion.Text = cliente.Direccion;
+
         }
     }
 }
